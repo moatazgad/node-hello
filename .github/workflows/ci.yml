@@ -30,7 +30,10 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: moatazgad/demo-app:latest
+        tags: |
+          moatazgad/demo-app:latest
+          moatazgad/demo-app:${{ steps.date.outputs.tag }}
+
 
 
 
