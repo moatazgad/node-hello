@@ -32,7 +32,7 @@ jobs:
         push: true
         tags: |
           moatazgad/demo-app:latest
-          moatazgad/demo-app:${{ steps.date.outputs.tag }}
+          moatazgad/demo-app:${{ github.sha  }}
 
 
 
