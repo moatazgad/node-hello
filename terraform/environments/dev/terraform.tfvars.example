@@ -1,0 +1,12 @@
+# Environment Configuration
+environment = "dev"
+project_name = "node-hello"
+
+# Docker Configuration
+docker_image = "docker-image"
+app_port = 3000
+external_port = 3000
+create_volume = false 
+docker_username = "docker-username"
+docker_password = "docker-token"
+new_relic_license_key = "new-relic-license-key"
