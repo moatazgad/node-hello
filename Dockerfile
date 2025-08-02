@@ -1,4 +1,3 @@
-# Use the official Node.js runtime as the base image
 # FROM node:20-alpine AS base
 FROM node:20-slim AS base
 
