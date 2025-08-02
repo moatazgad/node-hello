@@ -49,24 +49,6 @@ jobs:
       with:
         push: true
         tags: |
-          moatazgad/demo-app:latest
-          moatazgad/demo-app:${{ github.sha  }}
+          ${{ secrets.IMAGE_NAME }}:latest
+          ${{ secrets.IMAGE_NAME }}:${{ github.sha  }}
 
-
-
-
-
-    # - name: Build the Docker image
-    #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-
-
-
-    # - uses: mr-smithers-excellent/docker-build-push@v6
-    #   name: Build & push Docker image
-    #   with:
-    #     image: moatazgad/demo-app
-    #     tags: v1, latest
-    #     registry: docker.io
-    #     dockerfile: Dockerfile.ci
-    #     username: ${{ secrets.DOCKER_USERNAME }}
-    #     password: ${{ secrets.DOCKER_PASSWORD }}
